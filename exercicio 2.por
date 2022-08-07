@@ -3,38 +3,35 @@ programa
 	
 	funcao inicio()
 	{
-		/*
-		 6) Elabore um sistema que dada a idade de um nadador classifique-o em uma das seguintes
-           categorias:
-		 */
-		 
-		inteiro idade
-		escreva(" Digite sua idade: ")
-		leia(idade)
-
-		se (idade >=5 e idade<= 7){
-		escreva(" Infantil A ")
-
-		}senao se(idade >=8 e idade <= 11){
-		escreva( " Infantil B ")
+		real cod, numH, sal, exc=0.0, salExc=0.0
+		escreva("Insira o código do funcionário: ")
+		leia(cod)
 		
-		}senao se (idade>= 12 e idade<= 13){
-		escreva(" Juvenil A ")
+		escreva("Insira o total de horas trabalhadas: ")
+		leia(numH)
 		
-		}senao se (idade>= 14 e idade<= 17){
-          escreva (" Juvenil B ")
-
-		}senao se (idade >= 18){
-          escreva ("Idade Inválida!")
-
+		exc = numH - 50
+		se(exc > 0)
+		{
+		sal = 50.0 * 10.00
+		salExc= exc * 20.00
+		
+		sal += salExc
+		}senao{
+		sal = numH * 10
+		
 		}
-}		}
+		escreva("O salário total do funcionário é: ", sal)
+		escreva("\nO salário excedente do funcionário é: ", salExc)
+		
+      	}
+}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 518; 
+ * @POSICAO-CURSOR = 408; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
